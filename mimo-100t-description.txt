@@ -1,0 +1,28 @@
+I built BuildBro — an AI-powered full-stack code generator (buildbro.vercel.app) powered by MiMo V2.5 Pro. Users describe their app idea in natural language and BuildBro generates a complete, production-ready codebase with streaming responses.
+
+**The Problem:** Developers spend 60-70% of project time writing boilerplate — auth, database schemas, API routes, component scaffolding, config files. BuildBro eliminates this by turning natural language descriptions into deployable applications in minutes.
+
+**Core Architecture — Multi-Step AI Code Generation Pipeline:**
+1. Intent Parsing — MiMo V2.5 Pro analyzes the user's prompt to identify app type, tech stack preferences, required features, and architectural patterns
+2. Project Planning — generates a structured execution plan: file tree, dependency graph, component hierarchy, API route map, database schema
+3. Code Generation — streams complete, production-quality code file by file using MiMo's extended reasoning chains. Each file includes proper TypeScript types, error handling, validation, and best practices
+4. File Assembly — generated files are parsed, organized into a navigable tree, and displayed in a tabbed code editor with syntax highlighting
+5. Build Verification — terminal output shows dependency installation, compilation status, and build success/failure
+
+**Four Integrated Modules:**
+• AI Builder — split-pane interface with chat (left) + code viewer (right). The code viewer includes a file tree browser, tabbed editor with syntax highlighting, terminal output showing build progress, and live preview iframe. Users iterate conversationally: "add authentication" → AI modifies existing code contextually.
+• Template Gallery — 6 pre-built app templates (SaaS Dashboard, E-commerce Store, Blog Platform, REST API, Landing Page, Real-time Chat) that users can customize via natural language instructions.
+• Project Dashboard — manage all generated projects with status tracking (active/building/deployed), file counts, and one-click access to edit any project.
+• Streaming API — edge runtime SSE proxy to MiMo V2.5 Pro with real-time token-by-token streaming. Users see code being generated live, not batched.
+
+**Why MiMo V2.5 Pro:**
+(1) Extended reasoning chains — generating a full codebase requires coherent reasoning across 15+ files with consistent types, imports, and patterns. MiMo handles this multi-file coordination reliably.
+(2) Streaming quality — token-by-token streaming is critical for UX. Users watch their app being built in real-time. MiMo's API supports clean SSE streaming through the edge runtime.
+(3) Code quality — MiMo generates production-grade TypeScript with proper error handling, not placeholder code. The reasoning transparency lets users understand architectural decisions.
+
+**Tech Stack:** Next.js 16 (App Router), React 19, TypeScript 5, Tailwind CSS v4, Lucide React, deployed on Vercel with edge runtime SSE streaming.
+
+**Scale:** Current daily consumption ~3-5M tokens via MiMo Token Plan API. Each project generation uses ~200-500K tokens depending on complexity.
+
+**Live:** buildbro.vercel.app
+**GitHub:** cipherwork-eng/buildbro

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Isometric code cube -->
+  <!-- Top face -->
+  <polygon points="256,120 400,200 256,280 112,200" fill="#3b82f6"/>
+  <!-- Left face -->
+  <polygon points="112,200 256,280 256,420 112,340" fill="#1d4ed8"/>
+  <!-- Right face -->
+  <polygon points="400,200 256,280 256,420 400,340" fill="#2563eb"/>
+
+  <!-- Code brackets on top face -->
+  <path d="M186,195 L216,225 L186,255" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M326,195 L296,225 L326,255" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="275" y1="185" x2="237" y2="265" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+</svg>

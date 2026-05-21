@@ -27,9 +27,7 @@ export function Sidebar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-2.5 px-4 h-14 border-b border-border shrink-0">
-        <div className="w-7 h-7 rounded-md bg-accent flex items-center justify-center text-white text-xs font-bold shrink-0">
-          B
-        </div>
+        <img src="/icon.svg" alt="BuildBro" className="w-7 h-7 rounded-md shrink-0" />
         {!collapsed && (
           <span className="text-sm font-semibold text-text tracking-tight">BuildBro</span>
         )}

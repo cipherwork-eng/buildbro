@@ -1,11 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="#08090a"/>
-  <rect x="1" y="1" width="30" height="30" rx="7" stroke="#1e1f21" stroke-width="1"/>
-  <path d="M8 11L14 8V14L8 17V11Z" fill="#3b82f6"/>
-  <path d="M14 8L20 11V17L14 14V8Z" fill="#60a5fa"/>
-  <path d="M8 17L14 14V20L8 23V17Z" fill="#60a5fa"/>
-  <path d="M14 14L20 17V23L14 20V14Z" fill="#3b82f6"/>
-  <rect x="22" y="10" width="4" height="2" rx="1" fill="#8b8b8e"/>
-  <rect x="22" y="14" width="3" height="2" rx="1" fill="#8b8b8e" opacity="0.6"/>
-  <rect x="22" y="18" width="4" height="2" rx="1" fill="#8b8b8e" opacity="0.3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1011"/>
+      <stop offset="100%" style="stop-color:#08090a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="108" fill="url(#dark)"/>
+  <rect x="3" y="3" width="506" height="506" rx="106" fill="none" stroke="#1e1f21" stroke-width="2"/>
+
+  <!-- Isometric cube - 3 visible faces -->
+  <!-- Top face -->
+  <polygon points="256,100 380,170 256,240 132,170" fill="#3b82f6" opacity="0.9"/>
+  <!-- Left face -->
+  <polygon points="132,170 256,240 256,370 132,300" fill="#1d4ed8"/>
+  <!-- Right face -->
+  <polygon points="380,170 256,240 256,370 380,300" fill="#2563eb"/>
+
+  <!-- Code bracket on top face -->
+  <path d="M196,165 L226,195 L196,225" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M316,165 L286,195 L316,225" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Slash in center -->
+  <line x1="270" y1="155" x2="242" y2="235" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Subtle edge highlights -->
+  <line x1="256" y1="100" x2="256" y2="240" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+  <line x1="256" y1="240" x2="256" y2="370" stroke="#60a5fa" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Brand text -->
+  <text x="256" y="440" text-anchor="middle" font-family="Inter, -apple-system, system-ui, sans-serif" font-weight="700" font-size="48" fill="#e8e8ed" letter-spacing="-1">BuildBro</text>
+  <text x="256" y="468" text-anchor="middle" font-family="Inter, -apple-system, system-ui, sans-serif" font-weight="400" font-size="16" fill="#8b8b8e" letter-spacing="4">AI CODE GENERATOR</text>
 </svg>

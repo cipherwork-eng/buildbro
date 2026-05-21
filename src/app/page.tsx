@@ -95,7 +95,7 @@ export default function HomePage() {
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-5 h-5 rounded bg-accent flex items-center justify-center text-white text-[10px] font-bold">B</div>
+            <img src="/icon.svg" alt="BuildBro" className="w-5 h-5 rounded" />
             <span className="text-xs text-text-secondary">BuildBro</span>
           </div>
           <span className="text-xs text-text-secondary">AI-Powered Code Generation</span>
