@@ -1,4 +1,5 @@
-export const runtime = 'nodejs';
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 const MIMO_API_URL = 'https://token-plan-sgp.xiaomimimo.com/v1/chat/completions';
 const MIMO_MODEL = 'mimo-v2.5-pro';
