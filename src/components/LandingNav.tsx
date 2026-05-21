@@ -7,9 +7,7 @@ export function LandingNav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-md bg-accent flex items-center justify-center text-white text-xs font-bold">
-            B
-          </div>
+          <img src="/icon.svg" alt="BuildBro" className="w-7 h-7 rounded-md" />
           <span className="text-sm font-semibold text-text">BuildBro</span>
         </Link>
 
